@@ -2,6 +2,14 @@ import TitleHeader from "../components/title-header.jsx";
 import { useRef, useState } from "react";
 import ContactExperience from "../components/models/contact/contact-experience.jsx";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+
+const Message = ({ title, message }) => (
+  <div>
+    <strong>{title}</strong>
+    <div>{message}</div>
+  </div>
+);
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -29,8 +37,32 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
       );
 
+      toast.success(
+        <Message
+          title="Message Sent ✅"
+          message="Thanks for reaching out! I’ll get back to you soon."
+        />,
+      );
       setForm({ name: "", email: "", message: "" });
     } catch (e) {
+      toast.error(
+        <Message
+          title="Something went wrong ❌"
+          message={
+            <>
+              Oops! Couldn’t send your message. Please try again later.
+              <br />
+              Or email me directly at{" "}
+              <a
+                href="mailto:aayushguptaworks@gmail.com"
+                className="text-blue-500 underline"
+              >
+                aayushguptaworks@gmail.com
+              </a>
+            </>
+          }
+        />,
+      );
       console.error("EmailJS Error:", e);
     } finally {
       setLoading(false);
