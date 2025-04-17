@@ -96,9 +96,9 @@ const expCards = [
     title: "MERN Stack Intern",
     date: "July 2024 - August 2024",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Built a high‑performance analytics stack: Developed a Next.js 14 + Material UI dashboard to visualize 10+ proprietary trading algorithms and a Node.js/MongoDB backend that cut data‑retrieval latency by 30%.",
+      "Automated & optimized trading workflows: Scheduled daily financial data ingestion with Node.js/Axios (↑25% data accuracy), and revamped the paper‑trading engine—introducing Redis for order IDs and a heap‑based matching algorithm—to reduce order processing time by 20%.",
+      "Streamlined KYC & internal tooling: Standardized KYC forms and integrated secure Aadhaar storage (↓50% incomplete submissions, ↓30% processing time), plus built Reconciliation and RS Equity pages that improved strategy assessment by 45% and alert response by 30%.",
     ],
   },
   {
@@ -110,9 +110,9 @@ const expCards = [
     title: "Software Developer Intern",
     date: "July 2023 - July 2024",
     responsibilities: [
-      "Developed and maintained an open-source post-editing tool using the Qt Framework, aimed at correcting Translation and OCR errors in documents, particularly for Indian languages, as part of the Udaan Project.",
-      "Implemented 10+ new features, including a Visual Change-Tracking feature, resulting in a 25% increase in user productivity and a 40% reduction in editing time.",
-      "Resolved 50+ bugs, leading to a 60% decrease in reported issues and a 95% improvement in overall tool stability.",
+      "Led open‑source post‑editing tool development: Architected and maintained a Qt‑based editor for Indian languages (Udaan Project), integrating Bhashini OCR API and QCustomPlot to add 6 advanced chart types and a visual change‑tracking feature (↑25% productivity, ↓40% edit time).",
+      "Boosted stability & user adoption:** Squashed 50+ bugs to achieve 95% stability, packaged a Windows installer that cut setup time by 75% and support issues by 90%, and authored English/Hindi user manuals covering 3 major versions (↓50% support tickets).",
+      "Improved maintainability & roadmap planning: Overhauled code documentation (↑40% maintainability), collaborated with Prof. Ganesh Ramakrishnan on future‑proofing the tool, and earned a departmental Letter of Recommendation.",
     ],
   },
 ];
