@@ -175,12 +175,19 @@ const techStackIcons = [
 
 const socialImgs = [
   {
+    name: "instagram",
+    imgPath: "/images/insta.png",
+    link: "https://www.instagram.com/aayushguptaworks/",
+  },
+  {
     name: "x",
     imgPath: "/images/x.png",
+    link: "https://x.com/AayushGupta69",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    link: "https://www.linkedin.com/in/aayushgupta69",
   },
 ];
 
