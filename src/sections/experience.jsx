@@ -34,7 +34,7 @@ const Experience = () => {
         },
       });
     });
-    
+
     // Animate the timeline height as the user scrolls
     // from the top of the timeline to 70% down the screen
     // The timeline height should scale down from 1 to 0
@@ -60,7 +60,7 @@ const Experience = () => {
         },
       },
     });
-    
+
     // Loop through each expText element and animate them in
     // as the user scrolls to each text element
     gsap.utils.toArray(".expText").forEach((text) => {
@@ -87,7 +87,7 @@ const Experience = () => {
       });
     }, "<"); // position parameter - insert at the start of the animation
   }, []);
-  
+
   return (
     <section
       id="experience"
@@ -117,7 +117,11 @@ const Experience = () => {
                     </div>
                     <div className="expText relative z-20 flex gap-5 md:gap-10 xl:gap-20">
                       <div className="timeline-logo">
-                        <img src={card.logoPath} alt="logo" className={card.className} />
+                        <img
+                          src={card.logoPath}
+                          alt="logo"
+                          className={card.className}
+                        />
                       </div>
                       <div>
                         <h1 className="text-3xl font-semibold">{card.title}</h1>
