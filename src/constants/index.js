@@ -173,11 +173,23 @@ const techStackIcons = [
   },
 ];
 
+const socialImgs = [
+  {
+    name: "x",
+    imgPath: "/images/x.png",
+  },
+  {
+    name: "linkedin",
+    imgPath: "/images/linkedin.png",
+  },
+];
+
 export {
   words,
   expCards,
   navLinks,
   abilities,
+  socialImgs,
   counterItems,
   logoIconsList,
   techStackImgs,
