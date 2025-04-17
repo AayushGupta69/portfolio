@@ -4,6 +4,7 @@ import ShowcaseSection from "./sections/showcase-section.jsx";
 import LogoShowcase from "./sections/logo-showcase.jsx";
 import FeatureCards from "./sections/feature-cards.jsx";
 import Experience from "./sections/experience.jsx";
+import Testimonials from "./sections/testimonials.jsx";
 import Footer from "./sections/footer.jsx";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <LogoShowcase />
       <FeatureCards />
       <Experience />
+      <Testimonials />
       <Footer />
     </>
   );
