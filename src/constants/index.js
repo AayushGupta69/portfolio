@@ -91,7 +91,8 @@ const expCards = [
     review:
       "Aayush is effective in discharging responsibilities assigned to him. His work has been invaluable in delivering faster experiences.",
     imgPath: "/images/exp1.svg",
-    logoPath: "/images/logo1.jpg",
+    logoPath: "/images/logo1.png",
+    className: "h-12 w-12 pt-1",
     title: "MERN Stack Intern",
     date: "July 2024 - August 2024",
     responsibilities: [
@@ -104,7 +105,8 @@ const expCards = [
     review:
       "Aayush was enthusiastic, diligent, and sincere towards his work, while he showcased his talent in efficiently coordinating with the team alongside contributing towards the development and research goals. His overall performance was excellent.",
     imgPath: "/images/exp2.svg",
-    logoPath: "/images/logo2.svg",
+    logoPath: "/images/logo2.png",
+    className: "h-12 w-12",
     title: "Software Developer Intern",
     date: "July 2023 - July 2024",
     responsibilities: [

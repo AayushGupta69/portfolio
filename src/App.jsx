@@ -3,6 +3,7 @@ import Hero from "./sections/hero.jsx";
 import ShowcaseSection from "./sections/showcase-section.jsx";
 import LogoShowcase from "./sections/logo-showcase.jsx";
 import FeatureCards from "./sections/feature-cards.jsx";
+import Experience from "./sections/experience.jsx";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <ShowcaseSection />
       <LogoShowcase />
       <FeatureCards />
+      <Experience />
     </>
   );
 };
