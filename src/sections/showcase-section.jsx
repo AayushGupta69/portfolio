@@ -4,33 +4,43 @@ const AppShowcase = () => {
   const sectionRef = useRef(null);
   const realScoutRef = useRef(null);
   const liveDocsRef = useRef(null);
+  const prepWiseRef = useRef(null);
 
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          <div ref={realScoutRef} className="first-project-wrapper">
+          <div ref={prepWiseRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="RealScout App Interface" />
+              <img
+                src="/images/project1.png"
+                alt="Prepwise: AI-Driven Job Interview Preparation"
+              />
             </div>
             <div className="text-content">
-              <h2>
-                A FullStack Real Estate application featuring Google
-                authentication, dynamic property listings, and user profiles for
-                a seamless and scalable experience.
-              </h2>
+              <h2>Prepwise: AI-Driven Job Interview Preparation</h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, Appwrite, & TailwindCSS
-                for a fast, user-friendly experience.
+                Prepwise harnesses Vapi AI Voice agents and Google Gemini to
+                create interactive, voice-driven simulations of real interview
+                scenarios, allowing you to fine-tune your responses, enhance
+                your communication skills, and receive instant, data-backed
+                feedback—all through a seamless, personalized platform.
               </p>
             </div>
           </div>
 
           <div className="project-list-wrapper overflow-hidden">
+            <div className="project" ref={realScoutRef}>
+              <div className="image-wrapper bg-[#FFEFDB]">
+                <img src="/images/project2.png" alt="RealScout App Interface" />
+              </div>
+              <h2>RealScout - A FullStack Real Estate application</h2>
+            </div>
+
             <div className="project" ref={liveDocsRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
-                  src="/images/project2.png"
+                  src="/images/project3.png"
                   alt="LiveDocs - A Realtime Collaborative Text Editor"
                 />
               </div>
