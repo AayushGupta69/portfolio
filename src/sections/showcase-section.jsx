@@ -3,7 +3,7 @@ import { useRef } from "react";
 const AppShowcase = () => {
   const sectionRef = useRef(null);
   const realScoutRef = useRef(null);
-  const liveDocsRef = useRef(null);
+  const kitabwaleRef = useRef(null);
   const prepWiseRef = useRef(null);
 
   return (
@@ -37,14 +37,14 @@ const AppShowcase = () => {
               <h2>RealScout - A FullStack Real Estate application</h2>
             </div>
 
-            <div className="project" ref={liveDocsRef}>
+            <div className="project" ref={kitabwaleRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
                   src="/images/project3.png"
-                  alt="LiveDocs - A Realtime Collaborative Text Editor"
+                  alt="KitabWale - A platform for buying and selling used books online."
                 />
               </div>
-              <h2>LiveDocs - A Realtime Collaborative Text Editor</h2>
+              <h2>KitabWale - A platform for buying and selling used books online</h2>
             </div>
           </div>
         </div>
