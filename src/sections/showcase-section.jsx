@@ -44,7 +44,9 @@ const AppShowcase = () => {
                   alt="KitabWale - A platform for buying and selling used books online."
                 />
               </div>
-              <h2>KitabWale - A platform for buying and selling used books online</h2>
+              <h2>
+                KitabWale - A platform for buying and selling used books online
+              </h2>
             </div>
           </div>
         </div>
