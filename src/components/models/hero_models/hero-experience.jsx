@@ -2,10 +2,12 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
 
-import { Suspense } from "react";
-import { Room } from "./room.jsx";
+import { Suspense, lazy } from "react";
+
 import Particles from "./particles.jsx";
 import HeroLights from "./hero-lights.jsx";
+
+const Room = lazy(() => import("./room.jsx"));
 
 const HeroExperience = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });

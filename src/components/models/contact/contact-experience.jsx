@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import Computer from "./computer.jsx";
+import { lazy, Suspense } from "react";
+const Computer = lazy(() => import("./computer.jsx"));
 
 const ContactExperience = () => {
   return (
@@ -34,7 +35,9 @@ const ContactExperience = () => {
       </group>
 
       <group scale={0.03} position={[0, -1.49, -2]} castShadow>
-        <Computer />
+        <Suspense fallback={null}>
+          <Computer />
+        </Suspense>
       </group>
     </Canvas>
   );
