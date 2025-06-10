@@ -1,8 +1,14 @@
 import TitleHeader from "../components/title-header.jsx";
 import { techStackIcons } from "../constants";
-import TechIconCardExperience from "../components/models/tech_logos/tech-icon-card-experience.jsx";
+import { lazy, Suspense } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useEffect } from "react";
+import { useGLTF } from "@react-three/drei";
+
+const TechIconCardExperience = lazy(
+  () => import("../components/models/tech_logos/tech-icon-card-experience.jsx"),
+);
 
 const TechStack = () => {
   // Animate the tech cards in the skills section
@@ -31,6 +37,12 @@ const TechStack = () => {
         },
       },
     );
+  });
+
+  useEffect(() => {
+    techStackIcons.forEach((techStackIcon) => {
+      useGLTF.preload(techStackIcon.modelPath);
+    });
   });
 
   return (
