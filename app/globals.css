@@ -41,7 +41,7 @@ section {
     }
 
     .slide {
-      @apply absolute h-[48px] translate-y-0 overflow-hidden px-2 py-[30px] pt-0 md:h-[78px] md:translate-y-1 md:px-5;
+      @apply absolute h-12 translate-y-0 overflow-hidden px-2 py-7.5 pt-0 md:h-19.5 md:translate-y-1 md:px-5;
     }
   }
 
