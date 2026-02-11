@@ -24,7 +24,94 @@ body {
   font-family: var(--font-sans), sans-serif;
 }
 
+section {
+  width: 100dvw;
+}
+
 @layer components {
+  .hero-layout {
+    @apply relative z-10 mt-32 flex h-[80vh] items-start justify-center md:h-dvh xl:mt-20 xl:items-center;
+  }
+
+  .hero-text {
+    @apply pointer-events-none relative z-10 flex flex-col justify-center text-[30px] font-semibold md:text-[60px];
+
+    img {
+      @apply size-8 object-contain md:size-10;
+    }
+
+    .slide {
+      @apply absolute h-[48px] translate-y-0 overflow-hidden px-2 py-[30px] pt-0 md:h-[78px] md:translate-y-1 md:px-5;
+    }
+  }
+
+  /* Hero text slider starts */
+
+  .slide {
+    display: inline-block;
+    flex-direction: column;
+    transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+  }
+
+  @keyframes wordSlider {
+    0% {
+      transform: translateY(0.5%);
+    }
+    12.5% {
+      transform: translateY(-12.5%);
+    }
+    25% {
+      transform: translateY(-25%);
+    }
+    37.5% {
+      transform: translateY(-37.5%);
+    }
+    50% {
+      transform: translateY(-50%);
+    }
+    62.5% {
+      transform: translateY(-62.5%);
+    }
+    75% {
+      transform: translateY(-75%);
+    }
+    87.5% {
+      transform: translateY(-87.5%);
+    }
+  }
+
+  /* Hero Text slider ends */
+
+  .cta-wrapper {
+    @apply relative z-20 cursor-pointer;
+  }
+
+  .cta-button {
+    @apply bg-black-200 relative flex cursor-pointer items-center justify-center overflow-hidden rounded-lg px-4 py-4;
+
+    .bg-circle {
+      @apply bg-white-50 absolute top-1/2 -right-10 h-[120%] w-[120%] origin-center -translate-y-1/2 rounded-full transition-all duration-500 group-hover:right-10 group-hover:size-10;
+    }
+
+    .text {
+      @apply group-hover:text-white-50 -translate-x-5 text-black uppercase transition-all duration-500 group-hover:-translate-x-5 md:text-lg xl:translate-x-0;
+    }
+
+    .arrow-wrapper {
+      @apply group-hover:bg-white-50 absolute top-1/2 right-10 flex size-10 -translate-y-1/2 items-center justify-center overflow-hidden rounded-full;
+
+      img {
+        @apply size-5 translate-y-0 animate-bounce transition-all duration-500 group-hover:translate-y-0 xl:-translate-y-32;
+      }
+    }
+  }
+
   .navbar {
     @apply fixed left-1/2 z-100 w-full -translate-x-1/2 px-5 py-5 transition-all duration-300 ease-in-out md:px-20;
 
@@ -67,7 +154,7 @@ body {
     .contact-btn {
       @apply flex;
 
-      .inner{
+      .inner {
         @apply group-hover:bg-black-50 rounded-lg bg-white px-5 py-2 text-black transition-colors duration-300;
 
         span {
