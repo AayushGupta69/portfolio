@@ -29,6 +29,15 @@ section {
 }
 
 @layer components {
+  .padding-x-lg {
+    @apply px-5 md:px-10;
+  }
+
+  /* General Grids */
+  .grid-4-cols {
+    @apply grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-4;
+  }
+
   .hero-layout {
     @apply relative z-10 mt-32 flex h-[80vh] items-start justify-center md:h-dvh xl:mt-20 xl:items-center;
   }
