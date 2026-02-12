@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import { words } from "@/constants";
 import Button from "@/components/button";
 import ProfilePhoto from "@/components/profile-photo";
+import AnimatedCounter from "@/components/animated-counter";
 
 const Hero = () => {
   useGSAP(() => {
@@ -68,6 +69,8 @@ const Hero = () => {
           <ProfilePhoto />
         </header>
       </div>
+
+      <AnimatedCounter />
     </section>
   );
 };

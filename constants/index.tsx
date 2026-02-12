@@ -27,3 +27,10 @@ export const words = [
   { text: "Designs", imgPath: "/images/designs.svg" },
   { text: "Code", imgPath: "/images/code.svg" },
 ];
+
+export const counterItems = [
+  { value: 1, suffix: "+", label: "Years of Internship Experience" },
+  { value: 100, suffix: "+", label: "Bugs Resolved" },
+  { value: 7, suffix: "+", label: "Techs Mastered" },
+  { value: 95, suffix: "%+", label: "Stability Achieved" },
+];
