@@ -172,4 +172,52 @@ section {
       }
     }
   }
+
+  .app-showcase {
+    @apply mt-20 flex w-full items-center justify-center px-5 py-10 md:px-20 md:py-20;
+
+    .showcaselayout {
+      @apply flex flex-col justify-between gap-10 xl:flex-row;
+    }
+
+    .first-project-wrapper {
+      @apply flex h-full flex-col justify-between xl:w-[60%];
+
+      .image-wrapper {
+        @apply relative h-auto md:h-96 md:h-[50vh] xl:h-[70vh];
+
+        img {
+          @apply h-full w-full rounded-xl md:absolute md:inset-0 md:object-cover;
+        }
+      }
+
+      .text-content {
+        @apply mt-5 space-y-5;
+
+        .badges {
+          @apply mb-4 flex gap-2;
+        }
+
+        h2 {
+          @apply text-2xl font-bold md:text-3xl lg:text-4xl;
+        }
+      }
+    }
+
+    .project-list-wrapper {
+      @apply flex flex-col gap-10 md:flex-row xl:w-[40%] xl:flex-col;
+
+      .image-wrapper {
+        @apply relative h-64 rounded-xl py-0 md:h-52 lg:h-72 xl:h-[37vh] xl:px-5 2xl:px-12;
+      }
+
+      img {
+        @apply h-full w-full rounded-xl object-contain;
+      }
+
+      h2 {
+        @apply mt-5 text-lg font-semibold md:text-xl lg:text-2xl;
+      }
+    }
+  }
 }
