@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 
 import { words } from "@/constants";
 import Button from "@/components/button";
+import ProfilePhoto from "@/components/profile-photo";
 
 const Hero = () => {
   useGSAP(() => {
@@ -23,7 +24,7 @@ const Hero = () => {
       </div>
 
       <div className="hero-layout">
-        <header className="flex w-screen flex-col justify-center px-5 md:w-full md:px-20">
+        <header className="flex w-screen flex-col items-center justify-center gap-20 px-5 sm:gap-12 md:w-full md:flex-row md:justify-between md:gap-8 md:px-20 lg:gap-12">
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
@@ -63,6 +64,8 @@ const Hero = () => {
               id="counter"
             />
           </div>
+
+          <ProfilePhoto />
         </header>
       </div>
     </section>
