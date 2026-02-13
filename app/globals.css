@@ -34,6 +34,10 @@ section {
   }
 
   /* General Grids */
+  .grid-3-cols {
+    @apply grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3;
+  }
+
   .grid-4-cols {
     @apply grid grid-cols-1 gap-7 md:grid-cols-2 xl:grid-cols-4;
   }
@@ -219,5 +223,9 @@ section {
         @apply mt-5 text-lg font-semibold md:text-xl lg:text-2xl;
       }
     }
+  }
+
+  .card-border {
+    @apply border-black-50 bg-black-100 border;
   }
 }
